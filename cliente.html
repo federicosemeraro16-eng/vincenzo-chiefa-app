@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area clienti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <header>
+        <div class="jobdesc">
+          <img class="logo" src="asset/logosito.png" alt="logo" />
+        </div>
+
+        <nav class="navUser">
+          <ul>
+            <li>Nome Utente</li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- </div> -->
+      <section class="sub-recap">
+        <h2>Personal info</h2>
+        <div class="field-container">
+          <p id="clienteEmail">Indirizzo email:</p>
+          <p>federicosemeraro16@gmail.com</p>
+        </div>
+        <div class="field-container">
+          <p id="clientePiano">tipo di abbonamento</p>
+          <p>Mensile</p>
+        </div>
+        <div class="field-container">
+          <p id="clienteScadenza">scadenza abbonamento</p>
+          <p>18/07/2027</p>
+        </div>
+      </section>
+      <section class="sessione">
+        <div class="field-container">
+          <h2>Sessione del giorno</h2>
+          <p id="clienteSessione">sessione del giorno</p>
+          <button class="btn" id="vaiSessione">Vai alla sessione</button>
+        </div>
+      </section>
+
+      <section class="stats">
+        <h2>Statistiche</h2>
+        <p id="clienteStats"></p>
+      </section>
+    </div>
+    <script src="script.js"defer></script>
+  </body>
+</html>

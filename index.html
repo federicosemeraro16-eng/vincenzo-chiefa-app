@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="intro">                                 
+      <header>
+        <div class="jobdesc">
+          <h1>Vincenzo Chiefa</h1>
+          <h2>Personal Training & Coaching Online</h2>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programma.html">Metodo</a></li>
+            <li><a href="targettracking.html">Target Tracking</a></li>
+            <li><a href="supporto.html">Supporto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <h2>ALLENA IL TUO CORPO,</h2>
+        <h3>TRASFORMA LA TUA VITA</h3>
+        <p>Raggiungi i tuoi obbiettivi con l'aiuto di un personal trainer</p>
+        <button class="btn" id="startBtn">Accedi come cliente</button>
+        <div class="login-container">
+          <div class="login-section hidden">
+            <h3>Inserisci email e password</h3>
+            <form>
+              <div class="login-field">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email-input"
+                  placeholder="Inserisci il tuo indirizzo email"
+                />
+              </div>
+              <div class="login-field">
+                <label for="password">Password:</label>
+                <input
+                  id="password-input"
+                  type="password"
+                  placeholder="Inserisci la tua password"
+                />
+              </div>
+              <button class="btn" id="loginBtn" type="button">Login cliente</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section>
+      <div class="serviceSection">
+        <h2>PERCHE' ALLENARSI CON ME</h2>
+      </div>
+
+      <div class="cardContainer">
+        <a href="programma.html">
+          <div class="cardSection">
+            <h3>ALLENAMENTI SU MISURA</h3>
+            <i class="fa-solid fa-code"></i>
+            <p>Programmi personalizzati per le tue esigenze</p>
+          </div>
+        </a>
+        <a href="targettracking.html">
+          <div class="cardSection">
+            <h3>RISULTATI GARANTITI</h3>
+            <i class="fa-solid fa-chart-simple"></i>
+            <p>Obiettivi concreti e progressi misurabili</p>
+          </div>
+        </a>
+        <a href="targettracking.html">
+          <div class="cardSection">
+            <h3>SUPPORTO COSTANTE</h3>
+            <i class="fa-solid fa-user-check"></i>
+            <p>Assistenza e motivazione in ogni fase</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section>
+      <div class="reserveSection">
+        <h2>TRASFORMA IL TUO FISICO OGGI</h2>
+        <button class="btn" id="reserve-btn">Prenota una consulenza</button>
+      </div>
+    </section>
+
+    <footer>
+      <h2>TESTIMONIANZE</h2>
+      <div class="testimonianza-chiave">
+        <p>
+          “Allenarmi con Vincenzo è stata la svolta: professionalità, passione e
+          risultati concreti. Ogni sessione è diversa, stimolante e costruita su
+          misura. Non è solo un allenamento, è un percorso di crescita
+          personale.” — Laura M., cliente soddisfatta
+        </p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
