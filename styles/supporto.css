@@ -1,9 +1,13 @@
-.hero-targetTracking {
+.heroSupport {
   text-align: center;
   max-width: 100%;
 }
 
-.hero-targetTracking h1 {
+.heroSupport h1 {
   font-size: 2.2rem;
   color: #1DB954;
+}
+
+.heroSupport p {
+  color: #e0e0e0;
 }
