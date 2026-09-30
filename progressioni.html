@@ -23,15 +23,43 @@
       </div>
     </header>
     <main>
+      <!-- form per segnare i progressi -->
       <div class="main-intro">
-        <h2>Programma completo:</h2>
-        <p>Consulta il programma completo della giornata</p>
+        <h2>Progressioni:</h2>
+        <p>
+          Trascrivere serie, ripetizioni,kg utilizzati e fatica percepita
+          <strong>rpe/rir</strong>
+        </p>
       </div>
+      <form>
+        <label for="exercise">Esercizio:</label>
+        <input type="text" id="exercise" placeholder="Squat..." />
+
+        <label for="series">Serie:</label>
+        <input type="number" id="series" />
+
+        <label for="reps">Ripetizioni:</label>
+        <input type="number" id="reps" />
+
+        <label for="kgused">Kg usati:</label>
+        <input type="number" id="kgused" />
+
+        <label for="rpe-rir">RIR/RPE:</label>
+        <input type="range" id="rpe-rir" />
+
+        <button type="onsubmit" id="save-progression-btn">
+          Registra progressione
+        </button>
+      </form>
+      <!-- bottone per concludere la sessione e salvare i dati della sessione completa di allenamento -->
+      <button type="onclick" id="close-session-btn">
+        Concludi la sessione
+      </button>
     </main>
     <footer class="footer-nav">
       <ul>
-        <li><a href="progressioni.html">Registra le progressioni</a></li>
         <li><a href="mesociclo.html">Mesociclo</a></li>
+        <li><a href="programma.html">Programma giornaliero</a></li>
         <li><a href="settimana.html">Settimana corrente</a></li>
       </ul>
     </footer>

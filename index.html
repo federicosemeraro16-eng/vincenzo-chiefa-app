@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/login.css"/>
     <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
@@ -25,42 +26,26 @@
     <main>
       <!-- form per segnare i progressi -->
       <div class="main-intro">
-        <h2>Progressioni:</h2>
-        <p>
-          Trascrivere serie, ripetizioni,kg utilizzati e fatica percepita
-          <strong>rpe/rir</strong>
-        </p>
+        <h2>Login:</h2>
+        <p>Sei Vincenzo? Sei un gallino? Accedi ed iniziamo a lavorare</p>
+
+        <div class="login-sctn">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="vincezo.chiefa@gallino.it"
+          />
+
+          <label for="series">Password:</label>
+          <input type="password" id="password-login" />
+        </div>
       </div>
-      <form>
-        <label for="exercise">Esercizio:</label>
-        <input type="text" id="exercise" placeholder="Squat..." />
-
-        <label for="series">Serie:</label>
-        <input type="number" id="series" />
-
-        <label for="reps">Ripetizioni:</label>
-        <input type="number" id="reps" />
-
-        <label for="kgused">Kg usati:</label>
-        <input type="number" id="kgused" />
-
-        <label for="rpe-rir">RIR/RPE:</label>
-        <input type="range" id="rpe-rir" />
-
-        <button type="onsubmit" id="save-progression-btn">
-          Registra progressione
-        </button>
-      </form>
-      <!-- bottone per concludere la sessione e salvare i dati della sessione completa di allenamento -->
-      <button type="onclick" id="close-session-btn">
-        Concludi la sessione
-      </button>
     </main>
     <footer class="footer-nav">
       <ul>
-        <li><a href="mesociclo.html">Mesociclo</a></li>
-        <li><a href="programma.html">Programma giornaliero</a></li>
-        <li><a href="settimana.html">Settimana corrente</a></li>
+        <li><a href="mesociclo.html">Accedi come Vincenzo</a></li>
+        <li><a href="programma.html">Accedi come gallino</a></li>
       </ul>
     </footer>
   </body>
