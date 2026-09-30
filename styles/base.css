@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1rem;
+  color: #252525;
 }
 
 body{
-  font-family:"Cormorant Garamond", serif;;
+  font-family:"Cormorant Garamond", serif;
+  background: #FFFF;
+background: linear-gradient(166deg, rgba(255, 255, 255, 1) 20%, rgba(168, 245, 200, 1) 50%, rgba(76, 207, 127, 1) 100%);
+min-height: 100vh;
+
 }
 
 /* nav tipography */
@@ -13,10 +19,9 @@ header{
   padding: 1em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #FFFF;
-background: linear-gradient(103deg, rgba(255, 255, 255, 1) 20%, rgba(168, 245, 200, 1) 50%, rgba(76, 207, 127, 1) 100%);
-}
+    
+    
+    }
 
 header h2{
   margin-left:0.3em;
@@ -44,14 +49,50 @@ header h1{
 }
 
 header h2{
-  font-size: 0.5em;
+  font-size: 0.5rem;
 }
-header li,
-header li a{
-  font-size:0.3em;
-  font-weight: 600;
-}
+
 
 header img{
   width: 15%;
 }
+/* main section tipography */
+main h2{
+  font-size: 1.5rem;
+}
+
+main p{
+  font-size: 0.75rem;
+  
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  margin: 2em auto;
+}
+
+
+form div input{
+  display: flex;
+  align-items: center;
+  padding: 0 0.3rem;
+  border-radius: 30px;
+  height: 20px;
+  
+}
+
+/* button styling */
+
+button{
+  padding: 0.3rem;  
+  width: 100%;
+  max-width: 480px;
+  background-color: #99D930;
+  color: #FFF;
+  border-radius: 30px;
+  height: 20%;
+}
+
+
