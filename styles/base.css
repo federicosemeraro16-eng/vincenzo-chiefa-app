@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 1rem;
   color: #252525;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 body{
@@ -98,6 +99,12 @@ form input{
 
 /* footer typograpy */
 
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .footer-nav{
   max-width: 480px;
   width: 100%;
@@ -123,6 +130,7 @@ form input{
 .footer-nav ul li a{
   color: #FFF;
   text-decoration: none;
+  text-shadow: 0 1px 0 #252525;
 }
 
 
@@ -136,6 +144,7 @@ button{
   color: #FFF;
   border-radius: 30px;
   height: 55px;
+  text-shadow: 0 1px 0 #252525;
 }
 
 
