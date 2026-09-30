@@ -102,10 +102,11 @@ form input{
   max-width: 480px;
   width: 100%;
 }
-.footer-nav ul{
+.footer-nav ul,
+.footer-nav ul li{
   display: flex;
-  padding: 0 0.3rem;
-  ;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-nav ul li{
@@ -116,8 +117,13 @@ form input{
   color: #FFF;
   border-radius: 30px;
   height: 45px;
+  width: 100%;
 }
 
+.footer-nav ul li a{
+  color: #FFF;
+  text-decoration: none;
+}
 
 
 /* button styling */
