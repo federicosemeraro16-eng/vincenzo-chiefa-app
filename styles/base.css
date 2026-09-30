@@ -58,41 +58,105 @@ header img{
 }
 /* main section tipography */
 main h2{
+  text-align: center;
   font-size: 1.5rem;
 }
-
+main{
+  max-width: 480px;
+  width: 100%;
+}
 main p{
-  font-size: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
   
 }
 
-form div{
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5em;
-  margin: 2em auto;
-}
-
-
-form div input{
+form{
   display: flex;
   align-items: center;
-  padding: 0 0.3rem;
-  border-radius: 30px;
-  height: 20px;
+  flex-direction: column;
+  max-width: 480px;
+  width: 100%;
+  
+  justify-content: space-between;
   
 }
+
+
+form input{
+  display: flex;
+  border: 0.2px linear black;
+  width: 80%;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 30px;
+  height: 50px;
+  line-height: 50px;
+  
+  
+}
+
+/* footer typograpy */
+
+.footer-nav{
+  max-width: 480px;
+  width: 100%;
+}
+.footer-nav ul{
+  display: flex;
+  padding: 0 0.3rem;
+  ;
+}
+
+.footer-nav ul li{
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: rgba(76, 207, 127, 1);
+  color: #FFF;
+  border-radius: 30px;
+  height: 45px;
+}
+
+
 
 /* button styling */
 
 button{
-  padding: 0.3rem;  
+  padding: 0.3rem; 
+  border: none; 
   width: 100%;
-  max-width: 480px;
-  background-color: #99D930;
+  background-color: rgba(76, 207, 127, 1);
   color: #FFF;
   border-radius: 30px;
-  height: 20%;
+  height: 55px;
 }
 
 
+#save-progression-btn{
+  margin-top: 2em;
+}
+
+#close-session-btn{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em auto;
+}
+
+/* transitions and animations */
+button:hover,
+button:active,
+.footer-nav ul li:hover,
+.footer-nav ul li:active{
+  transition: 0.3s;
+}
+
+
+button:hover,
+button:active,
+.footer-nav ul li:hover,
+.footer-nav ul li:active{
+  border: 1px solid #FFF;
+
+}

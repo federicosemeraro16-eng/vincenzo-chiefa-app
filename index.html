@@ -40,30 +40,36 @@
         </p>
       </div>
       <form>
-        <div>
         <label for="exercise">Esercizio:</label>
-        <input type="text" id="exercise" placeholder="Squat...">
-        </div>
-        <div>
-        <label for="series">Serie:</label>
-        <input type="number" id="series">
-        </div>
-        <div>
-        <label for="reps">Ripetizioni:</label>
-        <input type="number" id="reps">
-        </div>
-        <div>
-        <label for="kgused">Kg usati:</label>
-        <input type="number" id="kgused">
-        </div>
-        <div>
-        <label for="rpe-rir">RIR/RPE:</label>
-        <input type="range" id="rpe-rir">
-        </div>
-        <button type="onsubmit">Registra progressione</button>
-      </form>
+        <input type="text" id="exercise" placeholder="Squat..." />
 
-      <button type="onclick">Concludi la sessione</button>
+        <label for="series">Serie:</label>
+        <input type="number" id="series" />
+
+        <label for="reps">Ripetizioni:</label>
+        <input type="number" id="reps" />
+
+        <label for="kgused">Kg usati:</label>
+        <input type="number" id="kgused" />
+
+        <label for="rpe-rir">RIR/RPE:</label>
+        <input type="range" id="rpe-rir" />
+
+        <button type="onsubmit" id="save-progression-btn">
+          Registra progressione
+        </button>
+      </form>
+<!-- bottone per concludere la sessione e salvare i dati della sessione completa di allenamento -->
+      <button type="onclick" id="close-session-btn">
+        Concludi la sessione
+      </button>
     </main>
+    <footer class="footer-nav">
+      <ul>
+        <li>Programma Completo</li>
+        <li>Consulta il mesociclo</li>
+        <li>Settimana corrente</li>
+      </ul>
+    </footer>
   </body>
 </html>
