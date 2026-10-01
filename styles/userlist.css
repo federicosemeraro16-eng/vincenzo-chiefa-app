@@ -1,0 +1,45 @@
+/* card tipography */
+
+.card-info-container{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-content: start;
+  width: 20%;
+  margin: 0 auto;
+  
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 480px;
+  width: 90%;
+  margin:3% auto;
+  border: 1px solid rgba(76, 207, 127, 1);
+  border-radius: 15px;
+}
+
+/* program button config */
+
+#program-btn-container{
+  width: 30%;
+}
+
+#program-btn{
+  height: 55px;
+  width: 85px;
+  font-size: 0.8rem;
+}
+
+/* animations and transformations */
+
+#program-btn:hover,
+.card-container:hover,
+#program-btn:active,
+.card-container:active{
+  border: 1px solid #FFF;
+}
+

@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/userlist.css">
     <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
@@ -24,14 +25,23 @@
     </header>
     <main>
       <div class="main-intro">
-        <h2>Sei alla settimana <span></span> del mesociclo:</h2>
-        <p>Quanto manca alla fine del mesociclo?</p>
+        <h2>Visualizza la lista gallini:</h2>
+        <p>Controlla gli allenamenti del pollaio</p>
       </div>
-      <div>
-        <p>Mesociclo in scadenza?</p>
-        <button type="onclick" id="close-session-btn">
-          Contatta Vincenzo per il rinnovo
-        </button>
+      <div class="card-container">
+        <div class="card-info-container">
+          <p>Gallino:</p>
+          <p>Federico Semeraro</p>
+        </div>
+        <div class="card-info-container">
+          <p>Settimana:</p>
+          <p>3</p>
+        </div>
+        <div class="card-info-container" id="program-btn-container">
+          <button type="onclick" class="button" id="program-btn">
+            Crea Programma
+          </button>
+        </div>
       </div>
     </main>
     <footer class="footer-nav">
