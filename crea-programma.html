@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincenzo web - Fullstack prep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/crea-programma.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <img src="asset/logo.jpg" alt="Coach's logo" />
+        <div class="header-container">
+          <h1>Vincenzo Chiefa</h1>
+          <h2>Chinesiologo Sportivo <br />Preparatore Atletico</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-intro" id="prgram-intro-section">
+        <h2>Crea un nuovo programma di allenamento:</h2>
+        <p>Assegna un nuovo piano di allenamento ad uno dei gallini</p>
+        <h3>Gallino in manutenzione:</h3>
+      <label for="name"
+        >Inserisci il nome del gallino per cui stai facendo il programma</label
+      >
+      <input type="name" placeholder="Fabrizio Esposito" />
+      </div>
+      <form>
+      <div class="week-container">
+      <p>Per quante settimane stai facendo il programma?</p>
+      <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      
+        <button type="button" class="add-btn">Aggiungi settimana</button>
+      
+        
+      </div>
+      <div class="week-container">
+      <p>Quante volte deve andare nel pollaio il gallino?</p>
+      <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+        <button type="button" class="add-btn">Aggiungi allenamento</button>
+      </div>
+      <h3>Aggiungi Esercizio</h3>
+      <label for="exercise">Digita Esercizio</label>
+      <input type="text" id="exercise" placeholder="Squat">
+      <label for="series">Quante serie</label>
+      <input type="number" id="series">
+      <label for="reps">Quante ripetizioni?</label>
+      <input type="number" id="reps">
+      <label for="rir-rpe">Inserisci Rir/Rpe</label>
+      <input type="number" id="rir-rpe">
+      <label for="special-remarks">Note del coach:</label>
+      <textarea rows="2" cols="35" id="special-remarks"></textarea>
+      <button type="button" class="add-btn">Aggiungi esercizio</button>
+      </form> 
+      <div class="btn-container">
+        <button type="button">Salva Programma</button>
+      </div>
+    </main>
+    <footer class="footer-nav">
+      
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

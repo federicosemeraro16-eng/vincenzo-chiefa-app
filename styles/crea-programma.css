@@ -1,0 +1,57 @@
+.dot{
+  border: 1px solid black;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  
+}
+
+/* page typography */
+
+.btn-container{
+  display: flex;  
+}
+
+.week-container{
+  width: 100%;
+  max-width: 480px;
+  justify-content: start;
+}
+
+#prgram-intro-section,
+.week-container{
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#prgram-intro-section{
+    margin-bottom: 10px;
+}
+  
+
+.dot-container{
+  display: flex;
+  gap: 5px;
+  
+}
+
+/* botton config */
+.add-btn{
+  width: 100%;
+  max-width: 480px;
+  height: 44px;
+  padding:0 0.2em;
+}
+
+.btn-container button{
+  margin-top: 10px;
+}
+
+#prgram-intro-section input{
+  width: 100%;
+  padding: 0 1em;
+  border-radius: 30px;
+  height: 55px;
+}
