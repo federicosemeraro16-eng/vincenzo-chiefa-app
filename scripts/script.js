@@ -6,19 +6,12 @@ const monthSubField = document.getElementById('subscription-months')
 const expirationDate = document.getElementById('expiration-date')
 //2. Quando il bottone viene cliccato:
 saveUserBtn.addEventListener('click',function(event){
-event.preventDefault()
-  
-  console.log('bottone cliccato')
+event.preventDefault()  
 //2.a) Leggo il valore dei vari input
 let nameValue = nameField.value
-console.log("nameValue:", nameValue)
 let surnameValue = surnameField.value
-console.log("surnameValue:", surnameValue)
 let subscriptionMonths = monthSubField.value
-console.log("months:", subscriptionMonths)
 let expirationDeadline = expirationDate.value
-console.log("dadline:", expirationDeadline)
-
 // 3) creo l'oggetto con i dati del nuovo cliente
 const newClient = {
   name : nameValue,
@@ -26,7 +19,6 @@ const newClient = {
   submonths : subscriptionMonths,
   expirationDate : expirationDeadline 
 }
-console.log(newClient)
 // 4) controllo se esiste un array clienti in localstorage
 const clientList = localStorage.getItem('listaClienti')
 // 4a.) se non esiste creo l'array e ci aggiungo il singolo oggetto all'array clienti
