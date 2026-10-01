@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/userlist.css">
+    <link rel="stylesheet" href="styles/userlist.css" />
     <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
@@ -28,19 +28,21 @@
         <h2>Visualizza la lista gallini:</h2>
         <p>Controlla gli allenamenti del pollaio</p>
       </div>
-      <div class="card-container">
-        <div class="card-info-container">
-          <p>Gallino:</p>
-          <p>Federico Semeraro</p>
-        </div>
-        <div class="card-info-container">
-          <p>Scadenza abbonamento:</p>
-          <p>19-06-2025</p>
-        </div>
-        <div class="card-info-container" id="program-btn-container">
-          <button type="onclick" class="button" id="program-btn">
-            Crea Programma
-          </button>
+      <div id="card-general-container">
+        <div class="card-container">
+          <div class="card-info-container">
+            <p>Gallino:</p>
+            <p>Federico Semeraro</p>
+          </div>
+          <div class="card-info-container">
+            <p>Scadenza abbonamento:</p>
+            <p>19-06-2025</p>
+          </div>
+          <div class="card-info-container" id="program-btn-container">
+            <button type="onclick" class="button" id="program-btn">
+              Crea Programma
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -52,5 +54,6 @@
       </ul>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/pollaio.js"></script>
   </body>
 </html>

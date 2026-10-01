@@ -42,12 +42,13 @@ surnameField.value =""
 monthSubField.value=""
 expirationDate.value=""
 })
-//
-//
-//
-//
-//
-//
+
+//pseudo codice per la funzione per mostrare la lista clienti una volta che viene aggiunto al pollaio
+//1. al caricamento della pagina 
+//2. leggo la lista clienti da localstorage con localstorage.getitem lista clienti
+//3.se la lista clienti non è vuota
+//4. creo un ciclo for per creare una card per ogni clitente presente nell'array lista clienti
+//5. mostro le card all'interno del DOM tramite +=innerHtml
 
 //
 
