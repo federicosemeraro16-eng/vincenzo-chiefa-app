@@ -43,14 +43,16 @@ monthSubField.value=""
 expirationDate.value=""
 })
 
-//pseudo codice per la funzione per mostrare la lista clienti una volta che viene aggiunto al pollaio
-//1. al caricamento della pagina 
-//2. leggo la lista clienti da localstorage con localstorage.getitem lista clienti
-//3.se la lista clienti non è vuota
-//4. creo un ciclo for per creare una card per ogni clitente presente nell'array lista clienti
-//5. mostro le card all'interno del DOM tramite +=innerHtml
-
-//
-
-
+//pseudo codice per creazione programma
+// 1.dichiaro tutti gli elementi che andranno a costruire il programma come variabile
+// settimana, allenamento, esercizio
+// 2.aggiungo un event listener sul bottone aggiungi settimana 
+// 3. al click del bottone se la variabile settimana è minore di cinque modifico il css con add class list 
+//4. aggiungo un event listener su aggiungi allenamento
+//anche qui se allenamento è minore di cinque coloro il pallino con add class list 
+// aggiungo event listener su salva programma 
+//. 5. quando questo viene cliccato settimane diventa settimaneprogramma e allenamento invece diventa sedute settimanali
+// 6. creo un ciclo for e per ogni settimana costruisco un oggetto 
+// 7. l'oggetto avrà chiave settimane e valore settimane +1
+//8.annido un altro ciclo dove creo per ogni giorno un oggetto con chiave giorno: valore i+1 esercizi =[];
 
