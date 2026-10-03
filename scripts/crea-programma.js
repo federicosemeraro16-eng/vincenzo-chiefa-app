@@ -3,7 +3,7 @@
 let settimana =0
 let allenamento=0
 let programma
-
+let giornoAttivo = { settimana:0,giorno:0}
 let esercizio
 
 const palliniAllenamento = document.querySelectorAll('.dot-allenamento')
@@ -12,6 +12,7 @@ const  addSessionBtn = document.getElementById('add-session-btn')
 const addWeekBtn = document.getElementById('add-week-btn')
 const saveBtn = document.getElementById('save-prgrm-btn')
 const addExBtn = document.getElementById('add-ex-btn')
+const createStrctrBtn = document.getElementById('create-strct-btn')
 
 
 
@@ -33,19 +34,19 @@ const coloraPallini = function(numero,tipo){
   }
 }
 
-addSessionBtn.addEventListener('click',function(){
-  incrementaElemento('allenamento')
-})
+// addSessionBtn.addEventListener('click',function(){
+//   incrementaElemento('allenamento')
+// })
 
-addWeekBtn.addEventListener('click',function(){
-  incrementaElemento('settimana')
+// addWeekBtn.addEventListener('click',function(){
+//   incrementaElemento('settimana')
   
-})
+// })
 
 
 //pseudo codice per salvataggio e creazione settimana:
 // 1. Quando il click viene fatto su salva programma viene creato un oggetto di nome programma;
-saveBtn.addEventListener('click',function(){
+ const creaStruttura = () =>{
    
   programma = {
     settimaneProgramma : settimana,
@@ -70,7 +71,7 @@ saveBtn.addEventListener('click',function(){
   }
   console.log(programma)
 
-})
+}
 
 
 //pseudo codice per creare la funzione che crea oggetto esercizio:
@@ -104,7 +105,23 @@ const creaOggettoEsercizio = function(){
 
 addExBtn.addEventListener('click',creaOggettoEsercizio)
 
+addSessionBtn.addEventListener('click',function(){
+  incrementaElemento('allenamento')
+})
 
-// 4.al click del bottone vengono letti gli input non vincolati tra di loro e creo un array vuoto per la compsizione dei dettagli della singola serie
-//5. nell'array della serie ci inserisco con metodo push serie rir ripetizioni
-// 6. creo un oggetto di ritorno con i valori letti e le chiavi dell'oggetto esercizio
+addWeekBtn.addEventListener('click',function(){
+  incrementaElemento('settimana')
+  
+})
+
+createStrctrBtn.addEventListener('click', creaStruttura)
+
+
+
+// 1.pseudo codice e risoluzione del problema dell'assegnazione del giorno 
+// 2.inserimento di due select in html per selezionare settimana e giorno per selezionare il giorno attivo;
+// 3. dichiarazione di giorno attivo con let giornoAttivo = {settimana : 0 , giorno : 0}
+// 4. scrivere una funzione chiamata selezione giornoattivo;
+// 5. leggere i valori degli input dei select
+// 6. aggiornare l'oggetto con value dei select 
+// 7. valore di return 
