@@ -45,7 +45,9 @@
           <span class="dot-settimana"></span>
         </div>
 
-        <button type="button" class="add-btn" id="add-week-btn">Aggiungi settimana</button>
+        <button type="button" class="add-btn" id="add-week-btn">
+          Aggiungi settimana
+        </button>
       </div>
       <div class="week-container">
         <p>Quante volte deve andare nel pollaio il gallino?</p>
@@ -56,32 +58,39 @@
           <span class="dot-allenamento"></span>
           <span class="dot-allenamento"></span>
         </div>
-        <button type="button" class="add-btn" id="add-session-btn">Aggiungi allenamento</button>
+        <button type="button" class="add-btn" id="add-session-btn">
+          Aggiungi allenamento
+        </button>
       </div>
       <form>
         <h3>Aggiungi Esercizio</h3>
-        <label for="exercise">Digita Esercizio</label>
-        <input type="text" id="exercise" placeholder="Squat" />
-        <label for="series">Quante serie</label>
-        <input type="number" id="series" />
-        <label for="reps">Quante ripetizioni?</label>
-        <input type="number" id="reps" />
-        <label for="rir-rpe">Inserisci Rir/Rpe</label>
-        <input type="number" id="rir-rpe" />
-        <label for="weight">Inserisci carico</label>
-        <input type="number" id="weight" />
-        <label for="rest">Inserisci Riposo</label>
-        <input type="number" id="rest" />
-        <label for="special-remarks">Note del coach:</label>
-        <textarea rows="2" cols="35" id="special-remarks"></textarea>
-        <button type="button" class="add-btn">Aggiungi esercizio</button>
+        <div class="serie-container">
+          <label for="exercise">Digita Esercizio</label>
+          <input type="text" id="exercise" placeholder="Squat" />
+          <div class="blocchi-serie">
+            <label for="series">Quante serie</label>
+            <input type="number" class="series" id="series" />
+            <label for="reps">Quante ripetizioni?</label>
+            <input type="number" class="reps" id="reps" />
+            <label for="rir-rpe">Inserisci Rir/Rpe</label>
+            <input type="number" class="rir-rpe" id="rir-rpe" />
+            <label for="weight">Inserisci carico</label>
+            <input type="number" class="weight" id="weight" />
+            <label for="rest">Inserisci Riposo</label>
+            <input type="number" class="rest" id="rest" />
+          </div>
+          <label for="special-remarks">Note del coach:</label>
+          <textarea rows="2" cols="35" id="special-remarks"></textarea>
+          <button type="button" class="add-btn" id="add-ex-btn">
+            Aggiungi esercizio
+          </button>
+        </div>
       </form>
       <div class="btn-container">
         <button type="button" id="save-prgrm-btn">Salva Programma</button>
       </div>
     </main>
     <footer class="footer-nav"></footer>
-    <script src="scripts/script.js"></script>
     <script src="scripts/crea-programma.js"></script>
   </body>
 </html>

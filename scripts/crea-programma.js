@@ -11,33 +11,34 @@ const palliniSettimana = document.querySelectorAll('.dot-settimana')
 const  addSessionBtn = document.getElementById('add-session-btn')
 const addWeekBtn = document.getElementById('add-week-btn')
 const saveBtn = document.getElementById('save-prgrm-btn')
+const addExBtn = document.getElementById('add-ex-btn')
 
 
 
-let incrementaElemento = function(quantità,tipoDiIncremento){
-  if (tipoDiIncremento === "settimana"){
-    settimana++
-    coloraPallini(settimana,'settimana')
-  } else if (tipoDiIncremento === "allenamento"){
-    allenamento++
+let incrementaElemento = function(tipoDiIncremento){
+  if (tipoDiIncremento === "settimana" && settimana < palliniSettimana.length){
+  coloraPallini(settimana,'settimana')
+  settimana++
+  } else if (tipoDiIncremento === "allenamento" && allenamento < palliniAllenamento.length){
     coloraPallini(allenamento,'allenamento')
+    allenamento++
   }
 }
 
-let coloraPallini = function(numero,tipo){
+const coloraPallini = function(numero,tipo){
   if (tipo === 'settimana'){
-    palliniSettimana[numero-1].classList.add('active')
+    palliniSettimana[numero].classList.add('active')
   } else if (tipo === 'allenamento'){
-    palliniAllenamento[numero-1].classList.add('active')
+    palliniAllenamento[numero].classList.add('active')
   }
 }
 
 addSessionBtn.addEventListener('click',function(){
-  incrementaElemento(allenamento,'allenamento')
+  incrementaElemento('allenamento')
 })
 
 addWeekBtn.addEventListener('click',function(){
-  incrementaElemento(settimana,'settimana')
+  incrementaElemento('settimana')
   
 })
 
@@ -52,13 +53,13 @@ saveBtn.addEventListener('click',function(){
     struttura :[]
   }
 
-  for (let i=0; i<=settimana; i++){
+  for (let i=0; i<settimana; i++){
     const settimanaObj = {
       settimana : i +1,
       giorni: []
     }
 
-    for (let j=0; j<=allenamento;j++){
+    for (let j=0; j<allenamento;j++){
       const allenamentoObj= {
         allenamento : j+1,
         esercizi : []
@@ -70,11 +71,40 @@ saveBtn.addEventListener('click',function(){
   console.log(programma)
 
 })
-//2. l'oggetto ha chiave: 
-// settimaneprogramma: settimana;
-// allenaentisettimana: allenamento;
-//struttura: [];
-// 3. creao un ciclo for per creare tante settimane quante sono state selezionate;
-// 4. annido un altro ciclo all'interno per creare tanti allenamenti quanti sono stati selezionati
-// 5. invio il risultato all'array dei giorni
-// 6. invio il risultato all'array delle settimane 
+
+
+//pseudo codice per creare la funzione che crea oggetto esercizio:
+// 1. dichiarare una funzione di nome crea oggetto con const
+const creaOggettoEsercizio = function(){
+  const exercise = document.getElementById('exercise').value
+  const specialRemarks = document.getElementById('special-remarks').value
+  const recupero = document.getElementById('rest').value
+
+  const serie = []
+
+  const blocchiSerie = document.querySelectorAll('.blocchi-serie')
+    
+  blocchiSerie.forEach(blocco => {
+    serie.push({
+      carico: Number(blocco.querySelector('.weight').value),
+      rir : Number(blocco.querySelector('.rir-rpe').value),
+      ripetizioni :  Number(blocco.querySelector('.reps').value)
+       
+    })
+  })
+  const esercizio = {
+      exercise : exercise,
+      specialRemarks : specialRemarks,
+      recupero : recupero,
+      serie : serie
+    }
+    console.log(esercizio)
+  return esercizio
+}
+
+addExBtn.addEventListener('click',creaOggettoEsercizio)
+
+
+// 4.al click del bottone vengono letti gli input non vincolati tra di loro e creo un array vuoto per la compsizione dei dettagli della singola serie
+//5. nell'array della serie ci inserisco con metodo push serie rir ripetizioni
+// 6. creo un oggetto di ritorno con i valori letti e le chiavi dell'oggetto esercizio
