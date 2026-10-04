@@ -4,7 +4,7 @@ let settimana =0
 let allenamento=0
 let programma
 let giornoAttivo = { settimana:0,giorno:0}
-let esercizio
+
 
 const palliniAllenamento = document.querySelectorAll('.dot-allenamento')
 const palliniSettimana = document.querySelectorAll('.dot-settimana')
@@ -13,6 +13,8 @@ const addWeekBtn = document.getElementById('add-week-btn')
 const saveBtn = document.getElementById('save-prgrm-btn')
 const addExBtn = document.getElementById('add-ex-btn')
 const createStrctrBtn = document.getElementById('create-strct-btn')
+const weekSelect = document.getElementById('week-select')
+const daySelect = document.getElementById('day-select')
 
 
 
@@ -34,14 +36,7 @@ const coloraPallini = function(numero,tipo){
   }
 }
 
-// addSessionBtn.addEventListener('click',function(){
-//   incrementaElemento('allenamento')
-// })
 
-// addWeekBtn.addEventListener('click',function(){
-//   incrementaElemento('settimana')
-  
-// })
 
 
 //pseudo codice per salvataggio e creazione settimana:
@@ -79,7 +74,7 @@ const coloraPallini = function(numero,tipo){
 const creaOggettoEsercizio = function(){
   const exercise = document.getElementById('exercise').value
   const specialRemarks = document.getElementById('special-remarks').value
-  const recupero = document.getElementById('rest').value
+  const recupero = Number(document.getElementById('rest').value)
 
   const serie = []
 
@@ -103,6 +98,55 @@ const creaOggettoEsercizio = function(){
   return esercizio
 }
 
+
+const selectDayWeekActive =() =>{
+  const weekActive = Number(weekSelect.value)-1
+  const dayActive = Number(daySelect.value)-1
+
+  giornoAttivo = {giorno:dayActive,settimana:weekActive}
+
+}
+
+
+
+const addEx =() =>{
+  
+  if(programma=== undefined){
+    alert('si prega di creare una sessione di lavoro')
+  } else{
+    const workingDay = creaOggettoEsercizio()
+
+    selectDayWeekActive()
+    
+    programma.struttura[giornoAttivo.settimana].giorni[giornoAttivo.giorno].esercizi.push(workingDay)
+  }
+
+  console.log(programma)
+
+}
+
+
+// 1. Quando clicco su addexbtn
+// 2. inserisco la prima condizione if programma è undefined facciamo apparire un alert tipo si prega di aprire una sessione di lavoro ad esempio
+// 3. se il programma esiste invece faccio partire la funzione creOggettoEsercizio salvandola in una variabile per custodire il valore di ritorno;
+// 4. faccio partire in seguito la funzione selectdayweekactive;
+// 5. devo entrare nel programma            a->unico passaggio
+// 6. entro nella strutturaa->unico passaggio
+// 7. inserisco weekActive.giornoAttivoa->unico passaggio
+//8. entro in giornia->unico passaggio
+//9. inserisco dayActive.giornoAttivoa->unico passaggio
+//10.concludo con push nell'array esercizia->unico passaggio
+
+
+
+
+
+
+
+weekSelect.addEventListener('change',selectDayWeekActive)
+daySelect.addEventListener('change',selectDayWeekActive)
+
+
 addExBtn.addEventListener('click',creaOggettoEsercizio)
 
 addSessionBtn.addEventListener('click',function(){
@@ -115,6 +159,8 @@ addWeekBtn.addEventListener('click',function(){
 })
 
 createStrctrBtn.addEventListener('click', creaStruttura)
+
+addExBtn.addEventListener('click',addEx)
 
 
 
