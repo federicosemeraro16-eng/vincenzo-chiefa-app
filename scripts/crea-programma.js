@@ -64,7 +64,7 @@ const coloraPallini = function(numero,tipo){
     }
     programma.struttura.push(settimanaObj)
   }
-  console.log(programma)
+  // console.log(programma)
 
 }
 
