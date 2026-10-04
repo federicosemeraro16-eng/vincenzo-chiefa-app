@@ -14,6 +14,7 @@ let subscriptionMonths = monthSubField.value
 let expirationDeadline = expirationDate.value
 // 3) creo l'oggetto con i dati del nuovo cliente
 const newClient = {
+  id : crypto.randomUUID(),
   name : nameValue,
   surname : surnameValue,
   submonths : subscriptionMonths,
