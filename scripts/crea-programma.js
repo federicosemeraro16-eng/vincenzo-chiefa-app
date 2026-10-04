@@ -15,6 +15,8 @@ const addExBtn = document.getElementById('add-ex-btn')
 const createStrctrBtn = document.getElementById('create-strct-btn')
 const weekSelect = document.getElementById('week-select')
 const daySelect = document.getElementById('day-select')
+const userSelect = document.getElementById('user-select')
+console.log(userSelect)
 
 
 
@@ -164,10 +166,25 @@ addExBtn.addEventListener('click',addEx)
 
 
 
-// 1.pseudo codice e risoluzione del problema dell'assegnazione del giorno 
-// 2.inserimento di due select in html per selezionare settimana e giorno per selezionare il giorno attivo;
-// 3. dichiarazione di giorno attivo con let giornoAttivo = {settimana : 0 , giorno : 0}
-// 4. scrivere una funzione chiamata selezione giornoattivo;
-// 5. leggere i valori degli input dei select
-// 6. aggiornare l'oggetto con value dei select 
-// 7. valore di return 
+//pseudo codice per inserimento option
+// 1.recupero listacliente con localStorage.getItem(JSON.pasrse,'listaClienti')
+// 2. faccio un ciclo of let cliente of listaclienti
+// 3. seleziono il select 
+// 4.per ogni cliente creo una option all'interno del ciclo 
+const popolaSelectClienti = ()=> {
+  const listaClienti = JSON.parse(localStorage.getItem('listaClienti')) || []
+
+  console.log('sta funzionando')
+  console.log(listaClienti)
+
+  for (const cliente of listaClienti){
+    const selectHtml = document.createElement('option')
+    selectHtml.textContent = `${cliente.name}`
+    selectHtml.value =cliente.id
+    userSelect.appendChild(selectHtml)
+    
+  }
+
+}
+
+popolaSelectClienti()
