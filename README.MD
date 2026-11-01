@@ -274,7 +274,7 @@ section.screen.activation-code
 ├── header.activation-code__header
     │   ├── button.activation-code__btn type='button'   ⚡ 'click' goTo('login') border-radius 50% freccia con pseudo
     │ 
-    └── span.activation-code__span Passo 1 di 2  
+    └── span.activation-code__header-span Passo 1 di 2  
     └──div.activation-code__step-page.activation-code__step-page--active background-color green 
     └──div.activation-code__step-page background-color grey 
 ├──main.activation-code__main
@@ -321,3 +321,11 @@ section.screen.activation-password
             - input.activation-password__inputconfirmation#password-confirmation  type="password" name='password-confirmation'
     - p.activation-password__error (text 'Le due password non coincidono)aria-live='polite' che esce solo quando le due password non coincidono
 | | -button.activation-password__btn type='submit'#password-activation text='Inizia ad allenarti'   ⚡submit -> aggiunta alla chiave dell'oggetto utente goTo('home')
+
+7.page no Found
+section.screen.not-found
+├── img.not-found__logo
+├── p.not-found__code          "404"   aria-hidden="true"
+├── h1.not-found__title
+├── p.not-found__text
+└── button.not-found__btn
