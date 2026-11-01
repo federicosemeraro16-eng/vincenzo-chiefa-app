@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+/* reset pagina  */
 *,
 *::after,
 *::before{
@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* general setups */
 button,
 input,
 select,
@@ -22,40 +22,54 @@ body{
   color: #F4F5F2;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  margin-left: 24px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-h1{
-  font-size:2.5rem;
+
+/* screen not found */
+
+section.screen.not-found{
+  margin-left: 24px;
+  letter-spacing: 0.3px;
+  background-color: #1E201E;
+  padding: 16px;
 }
 
-h1,h2{
-  line-height: 1;
-  word-spacing: 0.3px;
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 500;
+/* h1.not-found__title     */
+
+p.not-found__text{
+  margin-top:24px ;
 }
 
-h2{
-  font-size: 2rem;
-}
-
-label{
-  font-size: 0.875rem;
-  line-height: 1.4;
-}
-input{
-  margin-top: 8px;
-}
-
-section{
-  margin-top:24px;
-}
-
-.btn--primary{
+button.not-found__btn{
+  background-color: #2AB064;
+  color: #F4F5F2;;
+  margin-top: 24px;
+  padding: 14px;
+  border: 1px solid #2E312E;
+  border-radius:999px;
   height: 52px;
   width: 100%;
-  font-size: 0.875rem;
+  transition: 150ms;
+
+}
+
+button.not-found__btn:hover{
+ cursor: pointer;
+background-color: #151715;
+border: 1px solid #9CA39A;
+}
+
+button.not-found__btn:focus-visible{
+  border: 2px solid #2AB064;
+}
+
+button.not-found__btn:active{
+  width: 98%;
+}
+
+button.not-found__btn:disabled{
+  opacity: 0.5;
+  cursor: none;
 }
