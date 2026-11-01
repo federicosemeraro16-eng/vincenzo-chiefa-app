@@ -277,3 +277,10 @@ return activationCodeSection
 currentScreen = 'activation-code';
 render()
 
+
+//NEXT STEPS:
+// funzione che al click del bottone nell'header 'click' goTo('login') border-radius 50% freccia con pseudo
+// funzione che in caso di errore nell'invio del messaggio si cambia il p nella hero con fix del css
+//funzione che andando attiva il codice va alla seconda pagina per la creazione della password
+//creazione della pagina per la crezione della password
+
