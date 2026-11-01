@@ -24,6 +24,8 @@ body{
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
+  height: 100vh;
+  
 }
 
 
@@ -32,17 +34,25 @@ body{
 section.screen.not-found{
   margin-left: 24px;
   letter-spacing: 0.3px;
-  background-color: #1E201E;
+  /* background-color: #1E201E; */
   padding: 16px;
+  height: 100vh;
+  /* max-width: 480px; */
 }
 
-/* h1.not-found__title     */
+.not-found__title{
+  text-align: center;
+  margin-top: 120px;
+  text-transform: uppercase;
+  
+}
 
 p.not-found__text{
+  text-align: center;
   margin-top:24px ;
 }
 
-button.not-found__btn{
+.not-found__btn{
   background-color: #2AB064;
   color: #F4F5F2;;
   margin-top: 24px;
@@ -52,6 +62,9 @@ button.not-found__btn{
   height: 52px;
   width: 100%;
   transition: 150ms;
+  position: absolute;
+  bottom: 0;
+  max-width: inherit;
 
 }
 
