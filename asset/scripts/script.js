@@ -118,7 +118,7 @@ for (let chiave in activationCodeBtnAttributes){
   activationCodeBtn.setAttribute(chiave,activationCodeBtnAttributes[chiave]);
 }
 /*9.button.textContent ="⬅"*/
-activationCodeBtn.textContent="⬅";
+activationCodeBtn.textContent="<-";
 /*10.appendo il bottone all'header*/
 activationCodeHeader.appendChild(activationCodeBtn);
 /*11.creo un elemento span */
