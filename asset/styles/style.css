@@ -156,3 +156,43 @@ button {
 
 /* activation code page */
 
+.activation-code__btn{
+  background-color: var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: 10px;
+}
+
+.activation-code__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activation-code__text-container{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+.activation-code__header-span{
+  color:var(--border-strong);
+}
+.activation-code__step-page{
+  display: inline-block;
+  margin-left:5px;
+  width: 20px;
+  height: 5px;
+  border-radius: var(--radius-lg);
+  background-color: var(--border-strong);
+}
+
+.activation-code__step-page--active{
+  background-color: var(--brand);
+  width: 20px;
+  height: 5px;
+}
+
+.activation-code__logo{
+  width: 30%;
+}

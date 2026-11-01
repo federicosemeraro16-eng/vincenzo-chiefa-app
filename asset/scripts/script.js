@@ -122,25 +122,28 @@ activationCodeBtn.textContent="⬅";
 /*10.appendo il bottone all'header*/
 activationCodeHeader.appendChild(activationCodeBtn);
 /*11.creo un elemento span */
+const activationCodeTextContainer= document.createElement('div');
+activationCodeTextContainer.classList.add('activation-code__text-container')
+activationCodeHeader.appendChild(activationCodeTextContainer)
 const activationCodeHeaderSpan = document.createElement('span');
 /*12.do una classe activation-code__header-span*/
 activationCodeHeaderSpan.classList.add('activation-code__header-span');
 /*13. span.textContent  = Passo 1 di 2 */
 activationCodeHeaderSpan.textContent = 'Passo 1 di 2';
 /*14.appendo lo span all'header*/
-activationCodeHeader.appendChild(activationCodeHeaderSpan);
+activationCodeTextContainer.appendChild(activationCodeHeaderSpan);
 /*15.creo un elemento div/*/
 const activationCodeStepPageFirst = document.createElement('div');
 /*16.do classe .activation-code__step-page e .activation-code__step-page--active*/
 activationCodeStepPageFirst.classList.add(`activation-code__step-page` ,`activation-code__step-page--active`);
 /*17.appendo il div all'header*/
-activationCodeHeader.appendChild(activationCodeStepPageFirst);
+activationCodeTextContainer.appendChild(activationCodeStepPageFirst);
 /*18.creo un elemento div/*/
 const activationCodeStepPageSecond = document.createElement('div');
 /*19. do classe .activation-code__step-page*/
-activationCodeStepPageSecond.classList.add('.activation-code__step-page');
+activationCodeStepPageSecond.classList.add('activation-code__step-page');
 /*20.appendo il div all'header/*/
-activationCodeHeader.appendChild(activationCodeStepPageSecond);
+activationCodeTextContainer.appendChild(activationCodeStepPageSecond);
 /*21.creo un elemento main */
 const activationCodeMain = document.createElement('main');
 /*22.appendo il main alla section */
@@ -156,6 +159,7 @@ activationCodeMain.appendChild(activationCodeLogoContainer);
 /*27.creo un elemento img*/
 const activationCodeImg = document.createElement('img');
 /*28. do attributo src logo-full-white_1.png tramite set attribute ed alt ='logo-coach-vincenzo-chiefa'*/
+activationCodeImg.classList.add('activation-code__logo');
 const activationCodeImgAttributes = {
   src:'asset/img/logo-full-white_1.png',
   alt:'logo-coach-vincenzo-chiefa'
@@ -176,13 +180,13 @@ const activationCodeTitle = document.createElement('h1');
 /*34. do classe activation-code__title*/
 activationCodeTitle.classList.add('activation-code__title');
 /*35. activation-code__title.textcontent ='attiva il tuo '*/
-activationCodeTitle.textContent = `Attiva il tuo`
+activationCodeTitle.textContent = `Attiva il tuo `
 /*37.creo un elemento span*/
 const activationCodeSpan = document.createElement('span');
 /*38. do classe allo span activation-code__span*/
 activationCodeSpan.classList.add('activation-code__span');
 /*39. span text content 'codice invito'*/
-activationCodeSpan.textContent = `Codice Invito`
+activationCodeSpan.textContent = `Invito`
 /*40. appendo lo span all'h1*/
 activationCodeTitle.appendChild(activationCodeSpan);
 /*40-a)appendo l'h1 al div activation-code__hero*/
@@ -208,7 +212,7 @@ activationCodeLabel.classList.add('activation-code__label');
 /*50. do attributo for invite-code con setAttribute */
 activationCodeLabel.setAttribute('for','invite-code');
 /*51.label textcontent = codice invito*/
-activationCodeLabel.textContent = `Codice Invito`;
+activationCodeLabel.textContent = `Codice Invito: `;
 /*52appendo la label al  form*/
 activatioCodeCheckForm.appendChild(activationCodeLabel);
 /*53. creo un elemento input */
@@ -244,7 +248,7 @@ activationCodeHeroBtn.textContent = `Attiva il codice`;
 /*64. appendo il bottone al form*/
 activatioCodeCheckForm.appendChild(activationCodeHeroBtn);
 /*65. creo un elemento footer*/
-const activationCodeFooter = document.createElement('form');
+const activationCodeFooter = document.createElement('footer');
 /*66.do classe al footeractivation-code__footer*/
 activationCodeFooter.classList.add('activation-code__footer')
 /*67.appendo il footer alla section */
