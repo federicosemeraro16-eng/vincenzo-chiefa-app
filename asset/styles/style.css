@@ -154,13 +154,13 @@ button {
 }
 
 /* activation code page */
-.activation-code__main{
-  height: 70vh;
-}
+
 .activation-code__btn {
-  background-color: var(--border-strong);
-  border-radius: var(--radius-lg);
-  padding: 10px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
 }
 
 .activation-code__header {
@@ -177,7 +177,7 @@ button {
 
 
 .activation-code__header-span {
-  color: var(--border-strong);
+  color: var(--text-muted);
 }
 
 .activation-code__step-page {
@@ -196,7 +196,7 @@ button {
 }
 
 .activation-code__logo {
-  width: 40%;
+  height: 48px;
   margin-top: 16px;
 
 }
@@ -208,19 +208,20 @@ button {
 
 .activation-code__title {
   margin-bottom: 8px;
-  
+  line-height: 0.95; 
+  font-size: 3.5rem;
 
 }
 
 .activation-code__span {
-  color: #2AB064;
+  color: var(--brand);
   display: block;
 
 }
 
 .activation-code__paragraph {
   font-size: 1rem;
-  color: var(--border-strong);
+  color: var(--text-muted);
 }
 
 .activation-code__check-code {
@@ -230,18 +231,19 @@ button {
 
 .activation-code__hero-p{
   margin-top: 8px;
-  font-size: 0.875rem;
-  color: var(--text-subtle);
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
 .activation-code__input {
-  background-color: var(--border-strong);
+  background-color: var(--surface);
   color: var(--text);
-  padding: 8px;
+  height: 52px;
   width: 100%;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
   margin-top: 8px;
+  padding: 0 16px;
 }
 
 .activation-code__input:focus{
@@ -249,25 +251,34 @@ button {
 }
 
 .activation-code__hero-btn{
-  width: 100%;
-  position: relative;
-  top: 2px;
+   position: absolute;
+  bottom: 72px;
+  left: 20px;
+  right: 20px;
   background-color: var(--brand);
-  padding: 8px;
-  border: 1px solid var(--border);
+  height: 52px;
   border-radius: var(--radius-pill);
-  color: var(--bg);
   font-weight: 500;
-  margin-top: 16px;
+  color: var(--on-brand);
 }
 
+.activation-code__footer-paragraph{
+   position: absolute;
+  bottom: 24px;
+  left: 20px;
+  right: 20px;
+}
 .activation-code__hero-btn:hover{
   background-color: var(--brand-hover);
-  border: 2px solid var(--brand-text);
+  
 
 }
-
+.activation-code__btn:hover{
+  background-color: var(--surface-2);
+  border: 1px solid var(--border-strong);
+}
 .activation-code__footer{
+  text-align: center;
   width: 100%;
   
 }
@@ -277,5 +288,5 @@ button {
 }
 
 .activation-code__hero-btn::after{
-  content: ' ->';
+  content: ' →';
 }
