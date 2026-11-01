@@ -63,9 +63,13 @@ function notFoundScreen(){
   const newLogoNotFoundScreen = document.createElement('img');
   newLogoNotFoundScreen.setAttribute('src','asset/img/logo-full-white_1.png')
   newLogoNotFoundScreen.setAttribute('alt','logo-img');
-  // newLogoNotFoundScreen.classList.add('')
-  newSection.appendChild(newLogoNotFoundScreen)
-
+  newLogoNotFoundScreen.classList.add('not-found__logo')
+  const notFoundErrorCode = document.createElement('p');
+  notFoundErrorCode.textContent ='404';
+  notFoundErrorCode.setAttribute('aria-hidden','true')
+  notFoundErrorCode.classList.add('not-found__error-code')
+  newSection.appendChild(notFoundErrorCode);
+  newSection.prepend(newLogoNotFoundScreen)
   const notFoundh1 = document.createElement('h1');
   notFoundh1.textContent='Schermata non trovata';
   notFoundh1.classList.add('not-found__title');
