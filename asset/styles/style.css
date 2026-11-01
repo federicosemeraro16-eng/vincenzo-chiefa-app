@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
@@ -133,7 +132,7 @@ button {
   color: var(--text);
   border-radius: var(--radius-pill);
   padding: 16px;
-  transition-property: background-color,border-color;
+  transition-property: background-color, border-color;
   transition-duration: 150ms;
   border: 2px solid var(--border);
   position: absolute;
@@ -146,7 +145,7 @@ button {
 
   background-color: var(--surface);
   border: 2px solid var(--text-muted);
-  
+
 }
 
 .not-found__btn:disabled {
@@ -155,44 +154,128 @@ button {
 }
 
 /* activation code page */
-
-.activation-code__btn{
+.activation-code__main{
+  height: 70vh;
+}
+.activation-code__btn {
   background-color: var(--border-strong);
   border-radius: var(--radius-lg);
   padding: 10px;
 }
 
-.activation-code__header{
+.activation-code__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.activation-code__text-container{
+.activation-code__text-container {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
 
-.activation-code__header-span{
-  color:var(--border-strong);
+.activation-code__header-span {
+  color: var(--border-strong);
 }
-.activation-code__step-page{
+
+.activation-code__step-page {
   display: inline-block;
-  margin-left:5px;
+  margin-left: 5px;
   width: 20px;
   height: 5px;
   border-radius: var(--radius-lg);
   background-color: var(--border-strong);
 }
 
-.activation-code__step-page--active{
+.activation-code__step-page--active {
   background-color: var(--brand);
   width: 20px;
   height: 5px;
 }
 
-.activation-code__logo{
-  width: 30%;
+.activation-code__logo {
+  width: 40%;
+  margin-top: 16px;
+
+}
+
+.activation-code__hero {
+  margin-top: 8px;
+
+}
+
+.activation-code__title {
+  margin-bottom: 8px;
+  
+
+}
+
+.activation-code__span {
+  color: #2AB064;
+  display: block;
+
+}
+
+.activation-code__paragraph {
+  font-size: 1rem;
+  color: var(--border-strong);
+}
+
+.activation-code__check-code {
+  margin-top: 16px;
+
+}
+
+.activation-code__hero-p{
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: var(--text-subtle);
+}
+
+.activation-code__input {
+  background-color: var(--border-strong);
+  color: var(--text);
+  padding: 8px;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  margin-top: 8px;
+}
+
+.activation-code__input:focus{
+  border: 1px solid var(--brand);
+}
+
+.activation-code__hero-btn{
+  width: 100%;
+  position: relative;
+  top: 2px;
+  background-color: var(--brand);
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--bg);
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.activation-code__hero-btn:hover{
+  background-color: var(--brand-hover);
+  border: 2px solid var(--brand-text);
+
+}
+
+.activation-code__footer{
+  width: 100%;
+  
+}
+
+.activation-code__footer-span{
+  color: var(--brand);
+}
+
+.activation-code__hero-btn::after{
+  content: ' ->';
 }
