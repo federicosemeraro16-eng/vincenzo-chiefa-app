@@ -53,9 +53,14 @@ body {
 
 }
 
+.activation-code__logo-container{
+  max-width: 11rem;
+
+}
+
 img {
-  display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 h1,
