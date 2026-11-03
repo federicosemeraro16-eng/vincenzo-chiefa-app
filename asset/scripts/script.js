@@ -284,3 +284,105 @@ render()
 //funzione che andando attiva il codice va alla seconda pagina per la creazione della password
 //creazione della pagina per la crezione della password
 
+// funzione per creare password
+
+//apro la funzione activation Password
+//creo un documento section
+//do classi screen ed activation-password
+//creo un elemento header
+//do classe activation-password__header
+//appendo l header alla section
+//creo un elemento button 
+//do classe activation-password__btn
+// do type button con set attribute
+//appendo il button all header
+//creo uno span
+//span text content Passo 2 di 2 
+//do classe allo span .activation-password__span
+//appendo lo span all'header
+//creo un elemento div 
+// do classi activation-password__step-page e activation-password__step-page--active
+//appendo il div all header
+//creo un nuovo elemento div 
+// do classi activation-password__step-page e activation-password__step-page--active
+// appendo il div all header 
+//creo un elemento main
+//do classe activation-password__main
+//appendo il main alla section 
+//creo un elemento div 
+// do classe activation-password__notification.confimation-container
+//creo un elemento img 
+//do classe activation-password__logo
+// do attributi src'logo-full_1' alt='immagine logo'
+//appendo l'immagine activation-password__notification.confimation-container
+//creo un elemento h2 
+//do classe activation-password__subtitle
+// do text content ciao utente 
+//appendo l'h2 al div activation-password__notification.confimation-container
+//creo un elemento p 
+// do classe activation-password__text 
+// text content Vincenzo Chiefa ti ha inviato
+//appendo il p al div notification confirmation container
+//appendo  activation-password__notification.confimation-container al main
+//creo un elemento form 
+//do classe activation-password__form 
+//appendo il form al main
+//creo un elemento h1
+//do classe activation-password__title
+//activation-password__title text content CREA LA TUA
+//creo un elemento span 
+//span text content PASSWORD
+//do classe activation-password__span
+//appendo lo span all h1 
+//appendo l h1 al form 
+//creo un elemento label
+//do classse activation-password__label 
+//do attributo for email 
+//span text content Email 
+//appendo lo span al form 
+//creo un elemento input 
+//do classe .activation-password
+//do attributi email type text e readonly
+//appendo l'input al form
+//creo un elemento p 
+//do classe activation-password__text
+//p text content Email sbagliata?Avvisa il coach.
+//appendo il p al form 
+//creo un elemento label 
+//do classe activation-password__label
+//do attributo for ed input password
+//label text content password
+//appendo lo label alform 
+//creo un elemento input
+//do classe activation-password__input
+//do attributi #input-password type='password' name='input-password'con un for of 
+//appendo l input al form 
+//credo un alemento p
+//do classe activation-password__text e p.activation-password__text--passed
+//p text content almeno 8 caratteri
+//metti aria live polite con set attribute 
+//appendo il p al form 
+//creo un nuovo elemento p 
+// do classe activation-password__text e activation-password__text--passed
+//textcontent Una lettera minuscola 
+//appendo il secondo p al form 
+//metto aria live polite con set attribute
+//creo un elemento label 
+//do classe activation-password__label
+// do con set attribute for e password-confirmation 
+//text content per la label conferma password 
+//appendo la label al form 
+//creo un elemento input
+//dp classe activation-password__inputconfirmation
+// con un for of do attributi con set attribute all'interno id password-confirmation type password name password-confirmation
+//appendo la label al form 
+//creo un elemento p
+//dp una classe activation-password__error
+//con set attribute do aria live polite 
+//appendo l'error p al form 
+//creo un elemento button
+//do una classe activation-password__btn
+//button text content iniziza ad allenarti 
+//con un for of do type submit e password activation come id 
+//appendo il button al form 
+//ritorno la section tutta compilata
