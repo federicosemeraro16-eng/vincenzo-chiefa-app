@@ -160,6 +160,10 @@ button {
 
 /* activation code page */
 
+.activation-code__main{
+  text-align: center;
+}
+
 .activation-code__btn {
   background-color: var(--surface);
   border: 1px solid var(--border);
@@ -294,4 +298,21 @@ button {
 
 .activation-code__hero-btn::after{
   content: ' →';
+}
+
+@media screen and (min-width:768px) {
+  .activation-code__input{
+    max-width: 50%;
+  }
+
+  .activation-code__hero-btn{
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .activation-code__title{
+    font-size: 7rem;
+    
+  }
+  
 }
